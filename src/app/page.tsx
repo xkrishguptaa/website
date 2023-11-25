@@ -16,7 +16,7 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             {config.socials.map((social) => (
-              <Link className="group -m-1 p-1" href={social.url} aria-label={social.ariaLabel}>
+              <Link className="group -m-1 p-1" key={social.url} href={social.url} aria-label={social.ariaLabel}>
               <social.icon className="h-6 w-6 transition-transform hover:rotate-6 hover:scale-110" />
             </Link>
             ))}
