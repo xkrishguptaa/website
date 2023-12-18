@@ -2,6 +2,7 @@ import { Container } from '@/components/Container'
 
 import Link from 'next/link'
 import config from '@/config'
+import { Photos } from '@/components/Photos'
 
 export default async function Home() {
   return (
@@ -23,6 +24,7 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+      <Photos />
     </>
   )
 }

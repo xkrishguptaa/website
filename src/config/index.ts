@@ -15,17 +15,17 @@ const config: Config = {
     },
     {
       icon: InstagramIcon,
-      url: 'https://www.instagram.com/xkrishgupta/',
+      url: 'https://www.instagram.com/xkrishguptaa',
       ariaLabel: 'Follow on Instagram'
     },
     {
       icon: GithubIcon,
-      url: 'https://github.com/xkrishgupta',
+      url: 'https://github.com/xkrishguptaa',
       ariaLabel: 'Follow on Github'
     },
     {
       icon: LinkedinIcon,
-      url: 'https://www.linkedin.com/in/xkrishgupta/',
+      url: 'https://www.linkedin.com/in/xkrishguptaa',
       ariaLabel: 'Follow on LinkedIn'
     },
   ]
