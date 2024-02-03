@@ -1,0 +1,54 @@
+---
+import { buttonVariants } from "@/components/ui/button";
+import config from "@/config";
+---
+
+<div
+  class="relative flex justify-between items-center flex-col gap-6 xl:px-32 lg:px-24 md:px-18 sm:px-14 px-4 py-16"
+>
+  <div class="flex flex-col gap-3 items-center text-center max-w-prose">
+    <img
+      class="w-24 h-24 mx-auto"
+      src="/assets/images/avatar.png"
+      alt={`Profile Picture of ${config.name}`}
+    />
+    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+      {config.name}
+    </h1>
+    <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+      {config.bio}
+    </h2>
+    <p class="text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+      {config.description}
+    </p>
+  </div>
+  <div class="flex justify-center items-center gap-x-6">
+    <a
+      class={buttonVariants({
+        variant: "default",
+      })}
+      href="/projects">Projects</a
+    >
+    <a
+      class={buttonVariants({
+        variant: "secondary",
+      })}
+      href="/blogs">Blogs</a
+    >
+  </div>
+  <ul class="list-none flex gap-4">
+    {config.socials.map((social) => (
+      <li class="inline-block">
+        <a
+          href={social.url}
+          class="text-gray-600 hover:text-gray-900 transition-colors duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="sr-only">{social.name}</span>
+          <social.icon />
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>

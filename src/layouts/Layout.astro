@@ -1,0 +1,28 @@
+---
+import Navigation from '@/components/layout/Navigation';
+import config from '@/config';
+import '@/styles/globals.css'
+
+interface Props {
+	title?: string;
+  description: string;
+}
+
+const title = Astro.props.title ?? config.name
+const description = Astro.props.description ?? config.description
+---
+
+<!doctype html>
+<html lang="en" class="lowercase">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body>
+    <Navigation navigationItems={config.navigationItems} />
+		<slot />
+	</body>
+</html>
