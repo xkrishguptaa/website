@@ -4,11 +4,11 @@ import config from "@/config";
 ---
 
 <div
-  class="relative flex justify-between items-center flex-col gap-6 xl:px-32 lg:px-24 md:px-18 sm:px-14 px-4 py-16"
+  class="relative flex justify-between items-center flex-col gap-6 ui-px ui-py"
 >
   <div class="flex flex-col gap-3 items-center text-center max-w-prose">
     <img
-      class="w-24 h-24 mx-auto"
+      class="w-36 h-36 rounded-2xl mx-auto"
       src="/assets/images/avatar.png"
       alt={`Profile Picture of ${config.name}`}
     />
@@ -36,7 +36,7 @@ import config from "@/config";
       href="/blogs">Blogs</a
     >
   </div>
-  <ul class="list-none flex gap-4">
+  <ul class="list-none flex gap-8">
     {config.socials.map((social) => (
       <li class="inline-block">
         <a

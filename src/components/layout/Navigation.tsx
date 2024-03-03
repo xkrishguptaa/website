@@ -12,7 +12,7 @@ import config from "@/config";
 
 export default function ({ navigationItems }: { navigationItems: NavigationItem[] }) {
   return (
-    <header className="xl:px-32 lg:px-24 md:px-18 sm:px-14 px-4 py-2 flex justify-between items-center border-b-2">
+    <header className="ui-px py-2 flex justify-between items-center border-b-2">
       <div>
         <a
           href="/"
