@@ -1,6 +1,5 @@
 ---
-import Navigation from '@/components/layout/Navigation';
-import config from '@/config';
+import '@fontsource/poppins';
 import '@/styles/globals.css'
 
 interface Props {
@@ -8,12 +7,12 @@ interface Props {
   description: string;
 }
 
-const title = Astro.props.title ?? config.name
-const description = Astro.props.description ?? config.description
+const title = Astro.props.title
+const description = Astro.props.description
 ---
 
 <!doctype html>
-<html lang="en" class="lowercase">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -21,8 +20,7 @@ const description = Astro.props.description ?? config.description
 		<link rel="icon" type="image/svg+xml" href="/assets/images/avatar.png" />
 		<title>{title}</title>
 	</head>
-	<body>
-    <Navigation navigationItems={config.navigationItems} />
+	<body class="px-[10vw] py-[10vh] space-y-8">
 		<slot />
 	</body>
 </html>

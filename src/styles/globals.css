@@ -57,13 +57,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-@layer utilities {
-  .ui-px {
-    @apply xl:px-32 lg:px-24 md:px-14 px-4;
-  }
-
-  .ui-py {
-    @apply py-16;
-  }
-}
